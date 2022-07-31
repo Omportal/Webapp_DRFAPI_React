@@ -5,4 +5,5 @@ from django.conf import settings
 
 urlpatterns = [
     path('items/', views.ItemsList.as_view(), name='items'),
+    # path('post/', views.post_response),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
